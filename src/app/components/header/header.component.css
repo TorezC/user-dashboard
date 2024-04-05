@@ -1,0 +1,9 @@
+.header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header .input{
+    width: 40%;
+    height: 30px;
+}

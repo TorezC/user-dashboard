@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  @Output() searchQuery = new EventEmitter<any>();
 
+  search(event: any) {
+    if (event.target) {
+      this.searchQuery.emit(event.target.value);
+    }}
 }

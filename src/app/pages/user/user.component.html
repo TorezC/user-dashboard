@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="details-container">
+  <h2>User Details</h2>
+  <div>
+    <button routerLink="/">Back</button>
+  </div>
+  <div class="user-data">
+    <img [src]="userData.avatar" alt="avatar" />
+    <div>
+      <p>First Name: {{ userData.first_name }}</p>
+      <p>Last Name: {{ userData.last_name }}</p>
+      <p>Email: {{ userData.email }}</p>
+    </div>
+  </div>
+</div>
