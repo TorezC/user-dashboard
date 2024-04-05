@@ -1,5 +1,6 @@
 <p>
-    <mat-toolbar>
-        <p>User Dashboard</p>
-    </mat-toolbar>
+  <mat-toolbar class="header">
+    <p>User Dashboard</p>
+    <input class="input" type="text" (keyup)="search($event)" placeholder="Search by id">
+  </mat-toolbar>
 </p>
